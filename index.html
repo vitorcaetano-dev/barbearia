@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia [Sua Marca Aqui]</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="estilos/style.css">
+
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="imagens/logo.png" alt="Logo da Barbearia">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#">Home</a>
+          <a class="navbar-item" href="#hero">Sobre</a>
+          <a class="navbar-item" href="#services">Serviços</a>
+          <a class="navbar-item" href="#contact">Contato</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section" id="hero">
+      <h1 class="title has-text-centered">Barbearia [Sua Marca Aqui]</h1>
+      <p class="subtitle has-text-centered">Seu estilo em boas mãos.</p>
+      <div class="has-text-centered">
+        <button class="button is-primary">Agende seu corte</button>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section columns">
+
+      <div class="column is-6">
+        <h2 class="title">Sobre</h2>
+
+        <p class="subtitle">funcionamos das 08:00 as 11:30 e 12:30 as 05:0</p>
+        <p>Com uma pegada mais moderna, [sua barbearia] vai na contramão do tradicional estilo das barbearias e aposta
+          na originalidade.</p>
+        <p class="mt-2">Localizada em um dos bairros mais conhecidos e badalados de [sua cidade].</p>
+        <p class="mt-2">Desde [surgimento da barbearia], buscando pelo bem-estar de todos os clientes através dos
+          serviços de qualidade e com os melhores profissionais.</p>
+        <button class="button mt-4 is-info">Saber mais</button>
+      </div>
+      <div class="column is-6 has-text-centered is-flex is-justify-content-center">
+        <img class="image is-256x256 " id="img-sobre" src="imagens/sobre-1.jpg"
+          alt="Imagem ilustrativa sobre a barbearia">
+      </div>
+    </section>
+
+    <!-- Lista de Preços -->
+    <section class="section" id="services">
+      <h2 class="subtitle has-text-centered">Lista personalizada a seu preço</h2>
+      <ul class="list">
+        <li>Corte social <span class="valor">R$ 50,00</span></li>
+        <li>Barba <span class="valor">R$ 30,00</span></li>
+        <li>Pezinho <span class="valor">R$ 20,00</span></li>
+        <li>Corte na tesoura <span class="valor">R$ 60,00</span></li>
+        <li>Sobrancelha <span class="valor">R$ 15,00</span></li>
+        <li>Freestyle <span class="valor">R$ 70,00</span></li>
+        <li>Pigmentação <span class="valor">R$ 100,00</span></li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2 class="title has-text-centered">Promoções</h2>
+      <div class="box">
+        <p><strong>Corte + Barba</strong> por apenas <span class="has-text-danger">R$ 49,90</span></p>
+      </div>
+    </section>
+
+
+    <!-- Formulário -->
+    <section class="section " id="contact">
+      <h2 class="title has-text-centered">Agende seu corte</h2>
+      <form action="">
+        <div class="field">
+          <label for="iname" class="label">Nome:</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Digite aqui seu nome" id="iname" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="idate" class="label">Data do corte:</label>
+          <div class="control">
+            <input class="input" type="date" id="idate" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="ihora" class="label">Hora do corte:</label>
+          <div class="control">
+            <input class="input" type="time" id="ihora" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="button is-success">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="section">
+      <h2 class="title has-text-centered">Nossa Localização</h2>
+      <div class="has-text-centered">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d964190.8352708217!2d-42.7420824!3d-19.2662499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xae4b4d822f8225%3A0x77c060718ac50c50!2sGuanh%C3%A3es%2C%20MG%2C%2039740-000!5e0!3m2!1spt-BR!2sbr!4v1739453838564!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <h2 class="title has-text-centered">O que nossos clientes dizem</h2>
+      <div class="columns">
+        <div class="column">
+          <p>"Atendimento excelente e corte perfeito!" – João S.</p>
+        </div>
+        <div class="column">
+          <p>"Melhor barbearia da cidade! Recomendo muito." – Pedro L.</p>
+        </div>
+        <div class="column">
+          <p>"Corte na tesoura ficou incrível!" – Carlos A.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer mt-6">
+    <div class="content has-text-centered">
+      <p><strong>Barbearia [Nome]</strong> © 2025 - Todos os direitos reservados.</p>
+      <p>Telefone: (11) 1234-5678 | Email: contato@barbearia.com</p>
+      <p>
+        <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram mr-3 ml-3"></i></a>
+        <a target="_blank" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
