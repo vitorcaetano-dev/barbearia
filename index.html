@@ -24,7 +24,7 @@
           <img src="imagens/logo.png" alt="Logo da Barbearia">
         </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" onclick="menu()" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -48,10 +48,10 @@
       <h1 class="title has-text-centered">Barbearia [Sua Marca Aqui]</h1>
       <p class="subtitle has-text-centered  m-3 ">Seu estilo em boas mãos.</p>
       <div class="has-text-centered">
-        <button class="button is-primary">Agende seu corte</button>
+        <button id="marcar" class="button is-primary">Agende seu corte</button>
       </div>
     </section>
-
+    
     <!-- Sobre -->
     <section class="section columns">
 
@@ -100,12 +100,12 @@
         <div class="field">
           <label for="iname" class="label">Nome:</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Digite aqui seu nome" id="iname" required>
+            <input class="input" autocomplete="name" type="text" placeholder="Digite aqui seu nome" id="iname" required>
           </div>
         </div>
 
         <div class="field">
-          <label for="idate" class="label">Data do corte:</label>
+          <label for="idate"  class="label">Data do corte:</label>
           <div class="control">
             <input class="input" type="date" id="idate" required>
           </div>
